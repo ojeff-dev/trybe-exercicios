@@ -48,7 +48,7 @@ O objetivo dos exercícios é treinar alguns comandos iniciais no Terminal do Li
 
 # Exercícios(Bônus) - O despertar do terminal
 
-# Instruções(Linux):
+### Instruções(Linux):
 
 1. Se você utiliza o ```Linux```, abra o terminal e execute o comando ```sudo apt-get install cmatrix```. Depois, execute o comando ```cmatrix```. Quando estiver se sentindo como o Neo, aperte ```ctrl+c``` para voltar ao terminal;
 2. No sistema ```Linux```, execute o comando ```sudo apt-get install fortune```, após a instalação, crie um arquivo de texto chamado ```fortune.txt``` que contenha a sua sorte do dia. Utilize apenas uma linha de comando. ```Dica: use o comando fortune, e o operador >```;
