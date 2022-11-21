@@ -108,3 +108,5 @@
     </ul>
   </body>
 </html> ```
+
+1. Coloque todo o CSS da tag style em um arquivo externo.
