@@ -1,6 +1,8 @@
 # Exercícios "Para fixar"
+```
+Exercício 1:
 
-```<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8">
@@ -16,16 +18,19 @@
       <li>Goiaba</li>
     </ul>
   </body>
-</html> ```
+</html>
+
+Instruções:
 
 1. Modifique o tamnaho do h1 para 65 pixels;
 2. Modifique a cor do texto do h1 para laranja;
 3. Modifique a cor de fundo da lista não ordenada;
 4. Crie uma classe para modificar a cor de fundo da tag p e da ul ao mesmo tempo.
 
-===================================================================
+=============================================================================================
+Exercício 2:
 
-``` <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8">
@@ -41,7 +46,9 @@
       <li>Marrom</li>
     </ul>
   </body>
-</html> ```
+</html>
+
+Instruções:
 
 1. Modifique o font-family do h1 para sans-serif;
 2. Deixe o parágrafo com o font-weight 600;
@@ -50,9 +57,10 @@
 5. Explore as propriedades font-style, line-height, text-align e text-decoration;
 6. Troque a cor de fundo de cada item da lista para a cor correspondente ao texto.
 
-===================================================================
+=============================================================================================
+Exercício 3:
 
-``` <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8">
@@ -108,5 +116,7 @@
     </ul>
   </body>
 </html> ```
+
+Instruções:
 
 1. Coloque todo o CSS da tag style em um arquivo externo.
