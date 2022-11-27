@@ -65,3 +65,25 @@ if(cedula1 > cedula2 && cedula1 > cedula3) {
 console.log('');
 console.log('*********************************')
 console.log('');
+/* 
+TÓPICO 4:
+Utilize if/else para escrever um código que, dado um valor recebido como parâmetro, retorne “positive” se esse valor for positivo, “negative” se for negativo, e caso não seja nem positivo e nem negativo retorne “zero”.
+*/
+
+// Resolução - Tópico 4:
+let valorDigitado = 8;
+
+let valorRecebido = valorDigitado;
+
+if(valorRecebido > 0) {
+  console.log(valorRecebido + ' É um número positivo');
+} else if (valorRecebido < 0) {
+  console.log(valorRecebido + ' É um número negativo');
+} else if (valorRecebido !== Number) {
+  console.log('Por favor, insira um número!')
+}else {
+  console.log(valorRecebido + ' É Zero');
+}
+console.log('');
+console.log('*********************************')
+console.log('');
