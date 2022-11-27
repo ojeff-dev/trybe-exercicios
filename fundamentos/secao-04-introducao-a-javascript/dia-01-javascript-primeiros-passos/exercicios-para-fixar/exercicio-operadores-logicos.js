@@ -18,3 +18,44 @@ if (currentHour >= 22 && currentHour <= 24) {
 }
 
 console.log(message);
+
+console.log('                                                                ');
+console.log('******************** INÍCIO DO EXERCÍCIO 2 *********************');
+console.log('                                                                ');
+
+// Exercício "Para Fixar" 4 (Operadores Lógicos - OR):
+
+const weekDay = 'quarta-feira';
+
+if (weekDay === 'segunda-feira' || weekDay === 'terça-feira' || weekDay === 'quarta-feira' || weekDay === 'quinta-feira' || weekDay === 'sexta-feira') {
+  console.log('Oba, mais um dia de aprendizado na Trybe >:D');
+} else if (weekDay === 'sábado' || weekDay === 'domingo') {
+  console.log('FINALMENTE, descanso merecido UwU');
+} else {
+  console.log('Insira uma string com o nome de algum dia da semana');
+}
+
+// Resolvendo com Array e For:
+
+const weekDayArray = ['segunda-feira', 'terça-feira', 'quarta-feira', 'quinta-feira', 'sexta-feira'];
+const freeDaysArray = ['sábado', 'domingo'];
+
+const today = 'sábado';
+
+for (let index = 0; index < weekDayArray.length; index += 1) {
+
+  if (today == weekDayArray[index]) {
+    console.log('Oba, mais um dia de aprendizado na Trybe!');
+  }
+}
+for (let index2 = 0; index2 < freeDaysArray.length; index2 += 1) {
+  if (today === freeDaysArray[index2]) {
+    console.log('FINALMENTE, descanso merecido.');
+  }
+}
+
+// FIM!
+
+console.log('                                                                ');
+console.log('******************** INÍCIO DO EXERCÍCIO 3 *********************');
+console.log('                                                                ');
