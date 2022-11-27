@@ -45,3 +45,23 @@ if (valor1 > valor2) {
 console.log('');
 console.log('*********************************')
 console.log('');
+/* 
+TÓPICO 3:
+Utilize if/else para escrever um código que retorne o maior de três números. Defina, no começo do seu código, três constantes com os valores que serão comparados.
+*/
+
+// Resolução - Tópico 3:
+const cedula1 = 2;
+const cedula2 = 5;
+const cedula3 = 10;
+
+if(cedula1 > cedula2 && cedula1 > cedula3) {
+  console.log(cedula1 + ' É a maior cédula.');
+} else if(cedula2 > cedula1 && cedula2 > cedula3) {
+  console.log(cedula2 + ' É a maior cédula');
+} else {
+  console.log(cedula3 + ' É a maior cédula');
+}
+console.log('');
+console.log('*********************************')
+console.log('');
