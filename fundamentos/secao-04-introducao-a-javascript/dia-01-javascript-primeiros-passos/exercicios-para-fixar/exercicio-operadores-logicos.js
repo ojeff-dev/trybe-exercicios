@@ -55,7 +55,3 @@ for (let index2 = 0; index2 < freeDaysArray.length; index2 += 1) {
 }
 
 // FIM!
-
-console.log('                                                                ');
-console.log('******************** INÍCIO DO EXERCÍCIO 3 *********************');
-console.log('                                                                ');
