@@ -226,3 +226,25 @@ console.log(resultado);
 console.log('');
 console.log('*********************************')
 console.log('');
+/* 
+TÓPICO 9:
+🚀 Há um par entre nós
+
+Utilize if/else para escrever um código que defina três números em constantes e retorne true se pelo menos uma das três for ímpar. Caso contrário, ele deve retornar false.
+
+- Bonus: use somente um if.
+*/
+const numA = 6;
+const numB = 4;
+const numC = 8;
+
+let retorno = false;
+
+if(numA % 2 !== 0 || numB % 2 !== 0 || numC % 2 !== 0) {
+  retorno = true;
+}
+console.log(retorno);
+
+console.log('');
+console.log('*********************************')
+console.log('');
