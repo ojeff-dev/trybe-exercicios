@@ -203,3 +203,26 @@ if(nota >= 90 && nota <= 100) {
 console.log('');
 console.log('*********************************')
 console.log('');
+/* 
+TÓPICO 8:
+🚀 Há um par entre nós
+
+Utilize if/else para escrever um código que defina três números em constantes e retorne true se pelo menos uma das três for par. Caso contrário, ele deve retornar false.
+
+- Bonus: use somente um if.
+*/
+const firsNum = 11;
+const secondNum = 21;
+const thirdNum = 10;
+
+let resultado = false;
+
+if (firsNum % 2 === 0 || secondNum % 2 === 0 || thirdNum % 2 === 0) {
+  resultado = true;
+}
+
+console.log(resultado);
+
+console.log('');
+console.log('*********************************')
+console.log('');
