@@ -25,7 +25,7 @@ console.log('Divisão: ' + divisao);
 console.log('Módulo: ' + modulo);
 
 console.log('');
-console.log('*********************************')
+console.log('*********************************');
 console.log('');
 /* 
 TÓPICO 2:
@@ -43,7 +43,7 @@ if (valor1 > valor2) {
 }
 
 console.log('');
-console.log('*********************************')
+console.log('*********************************');
 console.log('');
 /* 
 TÓPICO 3:
@@ -63,7 +63,7 @@ if(cedula1 > cedula2 && cedula1 > cedula3) {
   console.log(cedula3 + ' É a maior cédula');
 }
 console.log('');
-console.log('*********************************')
+console.log('*********************************');
 console.log('');
 /* 
 TÓPICO 4:
@@ -85,7 +85,7 @@ if(valorRecebido > 0) {
   console.log(valorRecebido + ' É Zero');
 }
 console.log('');
-console.log('*********************************')
+console.log('*********************************');
 console.log('');
 /* 
 TÓPICO 5:
@@ -113,7 +113,7 @@ if(somaDosAngulos === 180 && angulo1 > 0 && angulo2 > 0 && angulo3 > 0) {
   console.log('Os dados inseridos são inválidos!');
 }
 console.log('');
-console.log('*********************************')
+console.log('*********************************');
 console.log('');
 /* 
 TÓPICO 6:
@@ -168,7 +168,7 @@ switch(pecaDeXadrez.toLowerCase()) {
     console.log('ERRO! Nome inválido!');
 }
 console.log('');
-console.log('*********************************')
+console.log('*********************************');
 console.log('');
 /* 
 TÓPICO 7:
@@ -201,7 +201,7 @@ if(nota >= 90 && nota <= 100) {
   console.log('Inválido!');
 }
 console.log('');
-console.log('*********************************')
+console.log('*********************************');
 console.log('');
 /* 
 TÓPICO 8:
@@ -224,7 +224,7 @@ if (firsNum % 2 === 0 || secondNum % 2 === 0 || thirdNum % 2 === 0) {
 console.log(resultado);
 
 console.log('');
-console.log('*********************************')
+console.log('*********************************');
 console.log('');
 /* 
 TÓPICO 9:
@@ -246,7 +246,7 @@ if(numA % 2 !== 0 || numB % 2 !== 0 || numC % 2 !== 0) {
 console.log(retorno);
 
 console.log('');
-console.log('*********************************')
+console.log('*********************************');
 console.log('');
 /* 
 TÓPICO 10:
@@ -276,5 +276,77 @@ if(custoInicial >= 0 && precoVenda >= 0) {
   console.log('Não foi possível realizar o cálculo');
 }
 console.log('');
-console.log('*********************************')
+console.log('*********************************');
+console.log('');
+/* 
+TÓPICO 11:
+🚀 Há um par entre nós
+
+Utilize if/else para escrever um código que, dado um salário bruto, calcule o líquido a ser recebido.
+
+Uma pessoa que trabalha de carteira assinada no Brasil tem descontados de seu salário bruto o INSS e o IR.
+
+- A notação para um salário de R$1500,10, por exemplo, deve ser 1500.10. Para as faixas de impostos, use as seguintes referências:
+  - INSS (Instituto Nacional do Seguro Social):
+    - Salário bruto até R$ 1.556,94: alíquota de 8%
+    - Salário bruto de R$ 1.556,95 a R$ 2.594,92: alíquota de 9%
+    - Salário bruto de R$ 2.594,93 a R$ 5.189,82: alíquota de 11%
+    - Salário bruto acima de R$ 5.189,82: alíquota máxima de R$ 570,88
+
+  - IR (Imposto de Renda):
+    - Até R$ 1.903,98: isento de imposto de renda
+    - De R$ 1.903,99 a 2.826,65: alíquota de 7,5% e parcela de R$ 142,80 a deduzir do imposto
+    - De R$ 2.826,66 a R$ 3.751,05: alíquota de 15% e parcela de R$ 354,80 a deduzir do imposto
+    - De R$ 3.751,06 a R$ 4.664,68: alíquota de 22,5% e parcela de R$ 636,13 a deduzir do imposto
+    - Acima de R$ 4.664,68: alíquota de 27,5% e parcela de R$ 869,36 a deduzir do imposto.
+
+  - EXEMPLO: Uma pessoa possui o salário bruto de R$ 3.000,00. O cálculo será:
+    - O salário bruto está entre R$ 2.594,93 e R$ 5.189,82, então sua alíquota para INSS é de 11%. O INSS será 11% de R$ 3.000, ou seja, R$ 330,00.
+    - Para descobrir o salário-base, subtraia do salário bruto a alíquota do INSS: R$ 3.000,00 - R$ 330,00 = R$ 2.670,00.
+    - Para pegar o valor do IR, temos um salário (já deduzido o INSS) entre R$ 1.903,99 e 2.826,65, sendo a alíquota, então, de 7.5%, com parcela de R$ 142,80 a deduzir do imposto. Assim, temos:
+      - R$ 2.670,00: salário com INSS já deduzido;
+      - 7.5%: alíquota de imposto de renda;
+      - R$ 142,80 parcela a se deduzir do imposto.
+    - Fazendo a conta, temos: (7,5% de R$ 2.670,00) - R$ 142,80 = R$ 57,45
+    - O último cálculo para conseguir o salário líquido é R$ 2.670,00 - R$ 57,45 (salário-base - valor IR) = R$ 2.612,55.
+    - Resultado: R$ 2.612,55.
+
+  - De olho na dica 👀: que tal identificar as alíquotas com variáveis de nomes explicativos?
+*/
+let salarioBruto = 5000;
+let aliquotaInss;
+let aliquotaIR;
+
+// Calcula o desconto do INSS
+if(salarioBruto <= 1556.94 && salarioBruto >= 0){
+  aliquotaInss = (8 / 100) * salarioBruto;
+} else if(salarioBruto <= 2594.92) {
+  aliquotaInss = (9 / 100) * salarioBruto;
+} else if(salarioBruto <= 5189.82) {
+  aliquotaInss = (11 / 100) * salarioBruto;
+} else if(salarioBruto > 5189.82) {
+  aliquotaInss = 570.88;
+}
+
+// Calcula o salário base
+let salarioBase = salarioBruto - aliquotaInss;
+
+// Calcula o desconto do IR
+if( salarioBase <= 1903.98) {
+  aliquotaIR = 0;
+} else if(salarioBase <= 2826.65) {
+  aliquotaIR = ((7.5 / 100) * salarioBase) - 142.80;;
+} else if(salarioBase <= 3751.05) {
+  aliquotaIR = ((15 / 100) * salarioBase) - 354.80;
+} else if(salarioBase <= 4664.68) {
+  aliquotaIR = ((22.5 / 100) * salarioBase) - 636.13;
+} else if(salarioBase > 4664.68) {
+  aliquotaIR = ((27.5 / 100) * salarioBase) - 869.36;
+}
+
+let totalDescontos = aliquotaInss + aliquotaIR;
+let salarioLiquido = salarioBruto - totalDescontos;
+console.log(salarioLiquido);
+console.log('');
+console.log('******************* FIM *******************');
 console.log('');
