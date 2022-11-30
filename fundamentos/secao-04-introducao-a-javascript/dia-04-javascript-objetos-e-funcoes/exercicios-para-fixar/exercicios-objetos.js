@@ -64,3 +64,16 @@ console.log('A jogadora', player.name, player.lastName, 'foi eleita a melhor do 
 console.log('');
 console.log('****************************************');
 console.log('');
+
+/* 
+TÓPICO 5:
+
+Acesse a chave medals, usando a sintaxe meuObjeto.chave, e faça um console.log no seguinte formato: “A jogadora possui 2 medalhas de ouro e 3 medalhas de prata”.
+
+*/
+
+console.log('A jogadora possui', player.medals.golden, 'medalhas de ouro e', player.medals.silver, 'medalhas de prata');
+
+console.log('');
+console.log('******************** FIM ********************');
+console.log('');
