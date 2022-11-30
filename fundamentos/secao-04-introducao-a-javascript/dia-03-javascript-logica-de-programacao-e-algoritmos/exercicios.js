@@ -66,3 +66,27 @@ console.log('A maior palavra' + ' é: ' + maiorPalavra + ' e a menor palavra é:
 console.log('');
 console.log('*********************************');
 console.log('');
+/* 
+TÓPICO 4:
+Um número primo é um número inteiro maior do que 1 que possui somente dois divisores, ou seja, é divisível por 1 e por ele mesmo. Sabendo disso, escreva um algoritmo que imprima no console o maior número primo entre 2 e 50.
+*/
+
+let maiorNumeroPrimo;
+
+for(let numeroPrimo = 2; numeroPrimo <= 50; numeroPrimo += 1) {
+  let verificador = true;
+
+  for(let divisor = 2; divisor < numeroPrimo; divisor += 1){
+    if(numeroPrimo % divisor === 0) {
+      verificador = false;
+    }
+  }
+  if(verificador === true) {
+    maiorNumeroPrimo = numeroPrimo;
+  }
+}
+console.log('O maior número primo entre ' + '2 e 50 é: ' + maiorNumeroPrimo);
+
+console.log('');
+console.log('****************** FIM ******************');
+console.log('');
