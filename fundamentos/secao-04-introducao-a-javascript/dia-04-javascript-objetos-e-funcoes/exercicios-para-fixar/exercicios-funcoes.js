@@ -33,3 +33,26 @@ console.log(adicao(), subtracao(), multiplicacao(), divisao(), modulo());
 console.log('');
 console.log('****************************************');
 console.log('');
+
+/* 
+TÓPICO 2:
+
+Faça um programa que retorne o maior de dois números. Defina, no começo do programa, duas constantes com os valores que serão comparados.
+
+*/
+
+const x = 9;
+const y = 10;
+
+function maiorNumero(){
+  if(x > y){
+    return x + ' é o maior número';
+  } else{
+    return y + ' é o maior número';
+  }
+}
+console.log(maiorNumero());
+
+console.log('');
+console.log('****************************************');
+console.log('');
