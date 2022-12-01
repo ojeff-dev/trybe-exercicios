@@ -56,3 +56,29 @@ console.log(maiorNumero());
 console.log('');
 console.log('****************************************');
 console.log('');
+
+/* 
+TÓPICO:
+
+Faça um programa que retorne o maior de três números. Defina, no começo do programa, três constantes com os valores que serão comparados.
+
+*/
+
+const k = 4;
+const p = 7;
+const v = 3;
+
+function maiorDeTres(){
+  if(k > 4 && k > v){
+    return k + ' é o maior número dos três';
+  } else if(p > k && p > v) {
+    return p + ' é o maior número dos três';
+  } else {
+    return v + ' é o maior número dos três';
+  }
+}
+console.log(maiorDeTres());
+
+console.log('');
+console.log('****************************************');
+console.log('');
