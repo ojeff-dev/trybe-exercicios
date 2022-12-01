@@ -13,22 +13,22 @@ Faça cinco programas, um para cada operação aritmética básica. Seu programa
 const a = 8;
 const b = 4;
 
-function adicao(a, b){
+function adicao(){
   return a + b;
 }
-function subtracao(a, b){
+function subtracao(){
   return a - b;
 }
-function multiplicacao(a, b){
+function multiplicacao(){
   return a * b;
 }
-function divisao(a, b){
+function divisao(){
   return a / b;
 }
-function modulo(a, b){
+function modulo(){
   return a % b;
 }
-console.log(adicao(a, b), subtracao(a, b), multiplicacao(a, b), divisao(a, b), modulo(a, b));
+console.log(adicao(), subtracao(), multiplicacao(), divisao(), modulo());
 
 console.log('');
 console.log('****************************************');
