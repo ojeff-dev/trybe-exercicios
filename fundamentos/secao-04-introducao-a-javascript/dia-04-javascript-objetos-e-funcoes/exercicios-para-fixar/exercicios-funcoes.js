@@ -58,7 +58,7 @@ console.log('****************************************');
 console.log('');
 
 /* 
-TÓPICO:
+TÓPICO 3:
 
 Faça um programa que retorne o maior de três números. Defina, no começo do programa, três constantes com os valores que serão comparados.
 
@@ -78,6 +78,28 @@ function maiorDeTres(){
   }
 }
 console.log(maiorDeTres());
+
+console.log('');
+console.log('****************************************');
+console.log('');
+
+/* 
+TÓPICO 4:
+
+Faça um programa que, dado um valor recebido como parâmetro, retorne “positive” se esse valor for positivo, “negative” se for negativo, e caso não seja nem positivo e nem negativo retorne “zero”.
+
+*/
+
+function numStatus(num){
+  if(num > 0) {
+    return num + ' é um número positivo';
+  } else if(num < 0) {
+    return num + ' é um número negativo';
+  } else {
+    return num + ' zero';
+  }
+}
+console.log(numStatus(5));
 
 console.log('');
 console.log('****************************************');
