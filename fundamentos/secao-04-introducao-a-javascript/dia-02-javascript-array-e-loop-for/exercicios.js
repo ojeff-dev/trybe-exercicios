@@ -43,3 +43,18 @@ for (let index = 0; index < numbers.length; index += 1) {
   }
 }
 console.log(maiorValor);
+
+/* 6. Descubra quantos valores ímpares existem no array e imprima o resultado. Caso não exista nenhum, imprima a mensagem: “nenhum valor ímpar encontrado”; */
+
+let valoresImpares = 0;
+
+for (let index = 0; index < numbers.length; index += 1) {
+  if (numbers[index] % 2 !== 0) {
+    valoresImpares += 1;
+  }
+}
+if (valoresImpares !== 0) {
+  console.log(`Existe(m) ${valoresImpares} valor(es) ímpar(es) no array`);
+} else {
+  console.log('nenhum valor ímpar encontrado.');
+}
