@@ -32,3 +32,14 @@ if (totalSoma / numbers.length > 20) {
 } else {
   console.log('valor menor ou igual a 20');
 }
+
+/* 5. Utilizando for, descubra qual o maior valor contido no array e imprima-o; */
+
+let maiorValor = numbers[0];
+
+for (let index = 0; index < numbers.length; index += 1) {
+  if (numbers[index] > maiorValor) {
+    maiorValor = numbers[index];
+  }
+}
+console.log(maiorValor);
