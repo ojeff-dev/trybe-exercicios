@@ -20,3 +20,7 @@ for (let index = 0; index < numbers.length; index += 1) {
     totalSoma += numbers[index];
 }
 console.log(totalSoma);
+
+/* 3. Calcule e imprima a média aritmética dos valores contidos no array; */
+
+console.log(totalSoma / numbers.length);
