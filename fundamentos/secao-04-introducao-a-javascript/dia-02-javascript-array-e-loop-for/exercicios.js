@@ -42,7 +42,7 @@ for (let index = 0; index < numbers.length; index += 1) {
     maiorValor = numbers[index];
   }
 }
-console.log(maiorValor);
+console.log(`${maiorValor} é o maior valor do array`);
 
 /* 6. Descubra quantos valores ímpares existem no array e imprima o resultado. Caso não exista nenhum, imprima a mensagem: “nenhum valor ímpar encontrado”; */
 
@@ -58,3 +58,14 @@ if (valoresImpares !== 0) {
 } else {
   console.log('nenhum valor ímpar encontrado.');
 }
+
+/* 7. Utilizando for, descubra qual o menor valor contido no array e imprima-o; */
+
+let menorValor = numbers[0];
+
+for (let index = 0; index < numbers.length; index += 1) {
+  if (numbers[index] < menorValor) {
+    menorValor = numbers[index];
+  }
+}
+console.log(`${menorValor} é o menor valor do array`);
