@@ -60,3 +60,18 @@ for (let index = n - 1; index >= 0; index -= 1) {
 }
 
 console.log('');
+
+/* 
+4. Depois, faça uma pirâmide com n asteriscos de base:
+
+n = 5
+
+  *
+ ***
+*****
+
+*/
+
+for (let index = n - 1; index >= 0; index -= 2) {
+  console.log(' '.repeat(index / 2) + asteriscos.repeat(n - index));
+}
