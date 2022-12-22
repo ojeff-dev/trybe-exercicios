@@ -40,3 +40,23 @@ n = 5
 for (let index = 0; index <= n; index += 1) {
   console.log(asteriscos.repeat(index));
 }
+
+console.log('');
+/* 
+3. Agora inverta o lado do triângulo. Por exemplo:
+
+n = 5
+
+    *
+   **
+  ***
+ ****
+*****
+
+*/
+
+for (let index = n - 1; index >= 0; index -= 1) {
+  console.log(' '.repeat(index) + asteriscos.repeat(n - index));
+}
+
+console.log('');
