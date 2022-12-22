@@ -75,3 +75,9 @@ console.log(`${menorValor} é o menor valor do array`);
 for (let index = 1; index <= 25; index += 1) {
   console.log(index);
 }
+
+/* 9. Utilizando o array que acabou de criar, imprima o resultado da divisão de cada um dos elementos por 2. */
+
+for (let index = 1; index <= 25; index += 1) {
+  console.log(index / 2);
+}
