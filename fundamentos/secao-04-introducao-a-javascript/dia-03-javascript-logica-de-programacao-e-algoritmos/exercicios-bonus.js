@@ -23,3 +23,20 @@ const n = 5;
 for (let index = 0; index < n; index += 1) {
   console.log(asteriscos.repeat(n));
 }
+
+/* 
+2. Faça o mesmo que antes, mas que imprima um triângulo retângulo com 5 asteriscos de base. Por exemplo:
+
+n = 5
+
+*
+**
+***
+****
+*****
+
+*/
+
+for (let index = 0; index <= n; index += 1) {
+  console.log(asteriscos.repeat(index));
+}
