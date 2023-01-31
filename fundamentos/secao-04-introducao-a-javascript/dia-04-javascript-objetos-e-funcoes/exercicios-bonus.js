@@ -33,6 +33,10 @@ Atenção! Quando você tem um número pequeno à direita de um número grande, 
 
 */
 
+console.log('');
+console.log('Exercício 1');
+console.log('');
+
 const convertRoman = (romanNum) => {
   const roman = {
     'I': 1,
@@ -57,6 +61,11 @@ const convertRoman = (romanNum) => {
 };
 
 console.log(convertRoman('CM'));
+
+
+console.log('');
+console.log('Exercício 2');
+console.log('');
 
 /* 
 
@@ -96,6 +105,10 @@ A partir do array de frutas basket, retorne um objeto que contenha o nome da fru
 Em seguida, imprima esse resultado na tela com uma mensagem no seguinte formato: Sua cesta possui: x Melancias, x Abacates...
 
 */
+
+console.log('');
+console.log('Exercício 3');
+console.log('');
 
 const basket = [
   'Melancia', 'Abacate', 'Melancia', 'Melancia', 'Uva', 'Laranja',
@@ -137,3 +150,71 @@ for (let index = 0; index < basket.length; index += 1) {
 for (let index in frutas) {
   console.log(`Sua cesta possui: ${frutas[index]} ${index}s, `);
 }
+
+/* 
+
+Exercício 4
+
+Usando o objeto abaixo, faça o que for pedido a seguir:
+
+- Acesse as chaves nome, sobrenome, andar e apartamento do último morador do blocoDois e faça um console.log no seguinte formato: “O morador do bloco 2 de nome Zoey Brooks mora no 1° andar, apartamento 101”.
+
+- Utilize o for para imprimir o nome completo de todos os moradores do bloco 1, acessando suas chaves nome e sobrenome. Depois faça o mesmo para os moradores do bloco 2.
+
+*/
+console.log('');
+console.log('Exercício 4');
+console.log('');
+
+let moradores = {
+  blocoUm: [
+    {
+      nome: 'Luiza',
+      sobrenome: 'Guimarães',
+      andar: 10,
+      apartamento: 1005,
+    },
+    {
+      nome: 'William',
+      sobrenome: 'Albuquerque',
+      andar: 5,
+      apartamento: 502,
+    },
+  ],
+  blocoDois: [
+    {
+      nome: 'Murilo',
+      sobrenome: 'Ferraz',
+      andar: 8,
+      apartamento: 804,
+    },
+    {
+      nome: 'Zoey',
+      sobrenome: 'Brooks',
+      andar: 1,
+      apartamento: 101,
+    },
+  ],
+};
+
+const bloco1 = moradores.blocoUm;
+const bloco2 = moradores.blocoDois;
+
+bloco2.find((object) => {
+  if (object.nome === 'Zoey') {
+    console.log(
+      `O morador do bloco 2 de nome ${object.nome} ${object.sobrenome} mora no ${object.andar} andar, 
+apartamento ${object.apartamento}`
+    );
+  }
+});
+
+console.log('');
+
+for (let index = 0; index < bloco1.length; index += 1) {
+  console.log(`${bloco1[index].nome} ${bloco1[index].sobrenome}`);
+  console.log(`${bloco2[index].nome} ${bloco2[index].sobrenome}`);
+}
+
+console.log('');
+console.log('|------------------------------ FIM ------------------------------|');
