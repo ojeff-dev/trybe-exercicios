@@ -11,6 +11,7 @@ class Info extends React.Component {
         <section>
           <h2>Minhas Habilidades - Hard Skills</h2>
           <ul>
+            <li>Lógica de Programação</li>
             <li>HTML</li>
             <li>CSS</li>
             <li>JavaScript</li>
