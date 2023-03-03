@@ -1,0 +1,26 @@
+html {
+  background-color: lightgreen;
+}
+
+.App {
+  text-align: center;
+  margin-top: 50vh;
+}
+
+h1 {
+  margin-bottom: 80px;
+}
+
+button {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  height: 80px;
+  margin: 4px;
+  padding: 8px;
+}
+
+.green {
+  background-color: green;
+  color: white;
+}
